@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_weight="1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:text="@string/catalog_default"
+        android:textColor="@color/bluejeff" />
+    <TextView 
+	        android:id="@+id/contacts_num"
+	        android:layout_width="wrap_content"
+			android:layout_height="30dip"
+			android:layout_weight="2"
+			android:gravity="right"
+			android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+			android:text="@string/contacts_num_default"
+			android:background="@color/white"
+			android:textColor="@color/black"/>
+    
+    </LinearLayout>
+    <include layout="@layout/reuse_line_break"/>
+          
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    
+	    <ImageView
+	       android:id="@+id/contact_photo"
+	       android:layout_width="60dp"
+	       android:layout_height="60dp"
+	       android:layout_marginLeft="15dp"
+	       android:layout_marginTop="6dp"
+	       android:layout_marginBottom="6dp"
+	       android:contentDescription="@string/contact_photo_desc"
+	       android:background="@drawable/xml_contact_photo_background"
+	       android:src="@drawable/contact_photo_default" />
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/contact_photo"
+	        android:orientation="vertical">
+	        
+	         <TextView
+		        android:id="@+id/contact_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/black"
+		       	android:layout_marginTop="12dp"
+		       	android:layout_marginLeft="15dp"
+		       	android:layout_marginBottom="6dp"
+		        android:textSize="20sp"
+		        android:text="@string/contact_name_default"/>
+	     </LinearLayout>
+	</RelativeLayout>  
+</LinearLayout>

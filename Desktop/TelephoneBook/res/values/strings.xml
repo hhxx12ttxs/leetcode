@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">通讯录</string>
+    <string name="top_title">联系人</string>
+    <string name="search_hint">查找联系人</string>
+    <string name="catalog_default">A</string>
+    <string name="contacts_num_default">0位联系人</string>
+    <string name="contact_name_default">未知姓名</string>
+    <string name="contact_photo_desc">联系人头像</string>
+    <string name="line_break">分割线</string>
+    <string name="show_contact_top_title">详情</string>
+
+</resources>

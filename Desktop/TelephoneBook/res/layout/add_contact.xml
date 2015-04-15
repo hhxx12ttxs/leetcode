@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contacts_margin">
+    <RelativeLayout 
+        android:id="@+id/relativelayout_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/deepskyblue">
+       <TextView 
+            android:id="@+id/back_to_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="7dp"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:text="取消"/>
+       	<TextView
+            android:id="@+id/select_save_pattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="7dp"
+            android:textSize="22sp"
+            android:textColor="@color/white"/>
+       	<ImageView 
+            android:id="@+id/save_pattern_icon"
+            android:layout_alignParentTop="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="200dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/drop_down"/>
+        <TextView 
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:paddingTop="7dp"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:text="保存"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>
